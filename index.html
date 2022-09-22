@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Bài tập về nhà</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-header">Tổng các số dương trong mảng.</h4>
+            <div class="row row-cols-2 ">
+                <div class="form-group col-2">
+                    <input type="number" class="form-control" id="nhapSo" placeholder="Nhập số">
+                </div>
+                <div class="form-group col-2">
+                    <button class="btn btn-dark" onclick="themSo()">Thêm number</button>
+                </div>
+            </div>
+            <div id="tapHopcacso" class="bg-primary text-light col-2"></div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title"><button class="btn btn-warning" onclick="tongSoduong()">Tổng các số dương</button></h4>
+            <div id="tong" class="bg-primary text-light col-1 mb-2">
+            </div>
+
+            <h4 class="card-title"><button class="btn btn-warning" onclick="soDuong()">Bao nhiêu số dương</button></h4>
+            <div id="dem" class="bg-primary text-light col-1 mb-2">
+            </div>
+
+            <h4 class="card-title"><button class="btn btn-warning" onclick="soNhonhat()">Số nhỏ nhất</button></h4>
+            <div id="min" class="bg-primary text-light col-1 mb-2">
+            </div>
+
+            <h4 class="card-title"><button class="btn btn-warning" onclick="soDuongNhoNhat()">Số dương nhỏ nhất</button>
+            </h4>
+            <div id="minDuong" class="bg-primary text-light col-1 mb-2">
+            </div>
+
+            <h4 class="card-title"><button class="btn btn-warning" onclick="soChancuoi()">Số chẵn cuối cùng</button></h4>
+            <div id="soChan" class="bg-primary text-light col-1 mb-2">
+            </div>
+
+            <p class="card-header">vị trí muốn đổi trong tập hợp</p>
+            <div class="row row-cols-2 ">
+                <div class="form-group col-1">
+                    <p class="card-header">Vị trí 1</p>
+                    <input type="number" class="form-control" id="viTri1" placeholder="">
+                </div>
+                <div class="form-group col-1">
+                    <p class="card-header">Vị trí 2</p>
+                    <input type="number" class="form-control" id="viTri2" placeholder="">
+                </div>
+            </div>
+            <h4 class="card-title"><button class="btn btn-dark" onclick="doiCho()">Đổi chỗ</button></h4>
+            <div id="switch" class="bg-primary text-light col-2 mb-2">
+            </div>
+
+            <h4 class="card-title"><button class="btn btn-dark" onclick="sapXep()">Sắp xếp tăng dần</button></h4>
+            <div id="sapXeptang" class="bg-primary text-light col-2 mb-2">
+            </div>
+
+            <h4 class="card-title"><button class="btn btn-dark" onclick="soNguyenToDauTien()">Số nguyên tố đầu
+                    tiên</button></h4>
+            <div id="primeNumber" class="bg-primary text-light col-1 mb-2">
+            </div>
+
+            <p class="card-text">Thêm số thực vào ô trống</p>
+            <div class="row row-cols-2 ">
+                <div class="form-group col-2">
+                    <input type="number" class="form-control" id="soThuc" placeholder="Nhập số thực">
+                </div>
+                <div class="form-group col-2">
+                    <button class="btn btn-success" onclick="addNumber()">Thêm số thực</button>
+                </div>
+            </div>
+            <div id="tapHopMoi" class="bg-primary text-light col-2"></div>
+
+            <h4 class="card-title"><button class="btn btn-info" onclick="isInteger()">Số lượng số nguyên của tập hợp
+                    trên là</button></h4>
+            <div id="soPrimeNumber" class="bg-primary text-light col-1 mb-2">
+            </div>
+
+            <h4 class="card-title"><button class="btn btn-info" onclick="soSanh()">So sánh</button></h4>
+            <div id="compare" class="bg-primary text-light col-2 mb-2">
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="/baitap.js"></script>
+</body>
+
+</html>
